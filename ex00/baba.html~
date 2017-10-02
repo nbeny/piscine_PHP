@@ -1,0 +1,9 @@
+<html>
+<body>
+
+<?php
+echo "<body bgcolor="#E6E6FA">";
+?>
+
+</body>
+</html>
