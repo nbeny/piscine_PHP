@@ -1,0 +1,15 @@
+body{background-color: dimgrey;}
+.cadre
+{
+	border-radius: 10px;
+	background-color: #909090;
+	box-shadow: 6px 6px 6px black;
+}
+.loupe
+{
+	padding-left: 600px;
+}
+.right
+{
+	float: right;
+}
