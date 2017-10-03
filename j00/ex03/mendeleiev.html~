@@ -11,7 +11,7 @@
 	.case
 	{
 	color: red;
-	font-size: 200%;
+	font-size: 3vw;
 	text-align: center;
 	border: thin solid #6495ed;
 	width: 5%;
@@ -26,13 +26,13 @@
 	color: black;
 	float: right;
 	front-style: italic;
-	font-size: 30%;
+	font-size: 1vw;
 	}
 	nb
 	{
 	color: yellow;
 	float: left;
-	font-size: 30%;
+	font-size: 1vw;
 	}
   </style>
   <h1>
