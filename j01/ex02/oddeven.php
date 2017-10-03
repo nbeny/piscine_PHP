@@ -1,24 +1,20 @@
 #!/usr/bin/php
 <?PHP
-while (1)
+while (42)
 {
+	if (feof(STDIN) === TRUE)
+	{
+		echo "^D\n";
+		exit(1);
+	}
 	echo "Entrez un nombre: ";
-	$line = fgets(STDIN);
-	if (feof(STDIN))
-		exit(PHP_EOL);
-	if (preg_match("/^\s*".
-		"([\+\-]?)([0-9]*)([0-9])".
-		"\n?$/", $line, $tab))
-	{
-		if ($tab[3] % 2)
-			echo "Le chiffre $tab[1]$tab[2]$tab[3] est Impair".PHP_EOL;
-		else
-			echo "Le chiffre $tab[1]$tab[2]$tab[3] est Pair".PHP_EOL;
-	}
-	else
-	{
-		$line = substr($line, 0, -1);
-		echo "'$line' n'est pas un chiffre".PHP_EOL;
-	}
+	$ligne = fgets(STDIN);
+	$ligne = trim($ligne, " \t\n\0\r\x0B");
+	if (is_numeric($ligne) === TRUE && ($ligne % 2) === 0)
+	      echo "le chiffre ".$ligne." est pair\n";
+	else if (is_numeric($ligne) === TRUE && ($ligne % 1) === 0)
+		  echo "le chiffre ".$ligne." est impair\n";
+	else if (feof(STDIN) === FALSE)
+		echo "'$ligne' n'est pas un chiffre\n";
 }
 ?>
