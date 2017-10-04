@@ -1,22 +1,18 @@
 #!/usr/bin/php
 <?php
-function epur_totab($str)
+array_shift($argv);
+$i = 0;
+if ($argc > 1)
 {
-	$str = preg_replace("/ +/", " ", trim($str, " "));
-	if (strlen($str) == 0)
-		return (array());
-	return (explode(" ", $str));
-}
-if (count($argv) > 1)
-{
-	array_shift($argv);
-	$tab = array();
-	foreach ($argv as $v)
-		$tab = array_merge($tab, epur_totab($v));
-	if (count($tab) > 0)
-	{
-		sort($tab);
-		echo implode(PHP_EOL, $tab).PHP_EOL;
-	}
+		$array = array_filter(explode(" ", $array[1]));
+		while ($argv[$i])
+		{
+				$array2 = array_filter(explode(" ", $argv[$i]));
+				$array = array_merge($array, $array2);
+				$i++;
+		}
+		sort($array);
+		if ($array[0] != NULL)
+			echo implode("\n", $array)."\n";
 }
 ?>

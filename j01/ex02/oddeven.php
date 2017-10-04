@@ -1,20 +1,23 @@
 #!/usr/bin/php
-<?PHP
-while (42)
+<?
+function get_nbr()
 {
-	if (feof(STDIN) === TRUE)
-	{
-		echo "^D\n";
-		exit(1);
-	}
-	echo "Entrez un nombre: ";
-	$ligne = fgets(STDIN);
-	$ligne = trim($ligne, " \t\n\0\r\x0B");
-	if (is_numeric($ligne) === TRUE && ($ligne % 2) === 0)
-	      echo "le chiffre ".$ligne." est pair\n";
-	else if (is_numeric($ligne) === TRUE && ($ligne % 1) === 0)
-		  echo "le chiffre ".$ligne." est impair\n";
-	else if (feof(STDIN) === FALSE)
-		echo "'$ligne' n'est pas un chiffre\n";
+		echo "Entrez un nombre: ";
+		$fd = fopen('php://stdin', 'r');
+		if (($line = fgets($fd)) == NULL)
+		{
+			echo "\n";
+			exit();
+		}
+		$var = trim($line, " \t\n");
+		if (ctype_digit($var) == FALSE)
+		 	echo "'$var' n'est pas un chiffre\n";
+		else if ($var{strlen($var) - 1} % 2 == 0)
+			echo "Le chiffre $var est Pair\n";
+		else if ($var % 2 != 0)
+			echo "Le chiffre $var est Impair\n";
+		fclose($fd);
 }
+while (42)
+	  get_nbr();
 ?>
