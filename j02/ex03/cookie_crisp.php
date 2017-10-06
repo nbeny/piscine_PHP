@@ -1,5 +1,5 @@
 <?php
-$day = *24*3600;
+$day = 24*3600;
 
 if ($_GET["action"] == "set")
 {
