@@ -1,0 +1,62 @@
+.top-box
+{
+	position: absolute;
+	width: 100%;
+	height: 170px;
+	background-image: linear-gradient(to right, gold, blue);
+}
+.left-box
+{
+	position: absolute;
+	margin-top: 170px;
+	width: 170px;
+	height: 1000px;
+	background-image: linear-gradient(to right, gold, silver);
+}
+.center-box
+{
+	position: absolute;
+	margin-top: 170px;
+	margin-left: 170px;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, silver, blue);
+}
+#title
+{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	font-family: Comic Sans MS;
+}
+.panier
+{
+	width: 50;
+	height: 50;
+	margin-top: 7px;
+	margin-left: 90%;
+}
+#connexion
+{
+	margin-top: -30px;
+	margin-left: 20%;
+	font-size: 15px;
+	font-family: Arial;
+}
+#creat-account
+{
+	width: 20px;
+	height: 100px;
+	margin-top: -25px;
+	margin-left: 2%;
+	font-size: 15px;
+	font-family: Arial;
+}
+.left
+{
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 20px;
+	height: 50px;
+	text-align: center;
+}
