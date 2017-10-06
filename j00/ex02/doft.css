@@ -1,15 +1,187 @@
-body{background-color: dimgrey;}
-.cadre
+body
 {
-	border-radius: 10px;
-	background-color: #909090;
-	box-shadow: 6px 6px 6px black;
+		margin: 0px;
+		background-color: #505050;
+}
+.main-box
+{
+		margin: 20px 0 0 240px;
+		width: 1446px;
+}
+.top-box
+{
+		background-color: #909090;
+		width: 1450px;
+		height: 140px;
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+}
+.day_of_the_42
+{
+		margin: 10px 0 0 10px;
+		width: 400;
+		height: 100;
 }
 .loupe
 {
-	padding-left: 600px;
+		float: right;
+		position: relative;
+		width: 250;
+		height: 150;
+		top: 10px;
 }
-.right
+.reload
 {
-	float: right;
+		float: right;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		top: 10px;
+		right: 10px;
+}
+.close
+{
+		float: right;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		top: 110px;
+		left: 10px;
+}
+.left-box
+{
+		background-color: #909090;
+		width: 142;
+		height: 426;
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+		margin-left: 30px;
+		margin-top: 20px;
+		text-align: center;
+}
+.arrow
+{
+		width: 75px;
+		height: 70px;
+		margin-top: 10px;
+}
+.main
+{
+		width: 75px;
+		height: 70px;
+}
+.oeil
+{
+		width: 75px;
+		height: 70px;
+		border: 5px solid red;
+		border-radius: 4px;
+}
+.outil
+{
+		width: 75px;
+		height: 70px;
+}
+.chat-icon
+{
+		width: 75px;
+		height: 70px;
+}
+.mid-box
+{
+		background-color: #909090;
+		width: 1025;
+		height: 585;
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+		margin-left: 200px;
+		margin-top: -426px;
+		text-align: center;
+		z-index: 1;
+}
+.cluster
+{
+		width: 1000px;
+		height: 565px;
+		margin: 10px 0 0 0;
+		z-index: 1;
+}
+.right-box
+{
+		background-color: #909090;
+		width: 142;
+		height: 426;
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+		margin-left: 1250px;
+		margin-top: -585px;
+		text-align: center;
+}
+.book
+{
+		width: 60;
+		height: 90;
+		margin-top: 10px;
+}
+.towel
+{
+		width: 75px;
+		height: 50px;
+}
+.brick
+{
+		width: 30px;
+		height: 30px;
+}
+.bottom-box
+{
+		position: absolute;
+		background-color: #8CFD8E;
+		float: left;
+		width: 528px;
+		height: 173px;
+		margin-top: 300px;
+		margin-left: -1300px;
+		box-shadow: 10px 10px 10px black;
+		border-radius: 10px;
+		z-index: 2;
+}
+.bottom-box-content
+{
+		font-size: 16px;
+		font-family: Arial, Helvetica, serif;
+		margin-left: 10px;
+		margin-top: 12px;
+		letter-spacing: 1px;
+}
+.bigtext
+{
+		 font-size: 34px;
+		 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.redshadow
+{
+		   text-shadow: 4px 4px 6px red;
+}
+.italic
+{
+		font-style:italic
+}
+.chair_clicker
+{
+		display: block;
+		width: 115px;
+		height: 200px;
+		position: absolute;
+		top: 520px;
+		left: 782px;
+}
+.screen_clicker
+{
+		display: block;
+		width: 195px;
+		height: 130px;
+		position:absolute;
+		top: 512px;
+		left: 1255px;
 }
