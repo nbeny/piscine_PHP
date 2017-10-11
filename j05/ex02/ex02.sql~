@@ -1,0 +1,2 @@
+INSERT INTO `ft_table` (`id`, `login`, `groupe`, `date_de_creation`)
+VALUES ('1', 'loki', 'staff', '2013-05-01');
